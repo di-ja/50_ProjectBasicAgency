@@ -1,0 +1,319 @@
+:root {
+    /* Colors */
+    --color0: #f4f4f4;
+    --color1: #252422;
+    --color2: #f9cdcd;
+}
+
+@font-face {
+    font-family: Grotesk-Regular;
+    src: url(../fonts/SctoGroteskA-Regular.woff2);}
+@font-face {
+    font-family: Grotesk-Medium;
+    src: url(../fonts/SctoGroteskA-Medium.woff2);}
+@font-face {
+    font-family: Grotesk-Bold;
+    src: url(../fonts/SctoGroteskA-Bold.woff2);}
+
+html{
+    scroll-behavior: smooth;
+}
+* {margin:0; padding:0}
+body {
+    font-family: Grotesk-Regular;
+    font-size: 20px;
+}
+.flurry {
+        height: 100vh;
+      }
+.flurry:after {
+        animation: mymove 8s steps(10) infinite;
+        background-image: url("../img/base.png");
+        content: "";
+        height: 300%;
+        left: -50%;
+        position: fixed;
+        top: -100%;
+        width: 300%;
+        z-index: -2;
+      }  
+@keyframes mymove {
+        0%, 100% { transform:translate(0, 0) }
+        10% { transform:translate(-5%, -10%) }
+        20% { transform:translate(-15%, 5%) }
+        30% { transform:translate(7%, -25%) }
+        40% { transform:translate(-5%, 25%) }
+        50% { transform:translate(-15%, 10%) }
+        60% { transform:translate(15%, 0%) }
+        70% { transform:translate(0%, 15%) }
+        80% { transform:translate(3%, 35%) }
+        90% { transform:translate(-10%, 10%) }
+      }
+/*------ Global ------*/
+h1 {
+    font-family: Grotesk-Medium;
+    font-size: 4.5em;
+    line-height: 1.3em;
+    color: var(--color1);
+}
+h2 {
+    font-family: Grotesk-Bold;
+    font-size: 2.2em;
+    font-family: Grotesk-Bold;
+    color: var(--color1);
+}
+h3 {
+    font-size: 1.8em;
+    font-family: Grotesk-Bold;
+    color: var(--color1);
+    font-family: Grotesk-Bold;
+
+}
+h4 {
+    font-size: 1.2em;
+    font-family: Grotesk-Regular;
+    line-height: 1.1em;
+    color: var(--color0);
+}
+.bold {
+    font-family: Grotesk-Bold;
+}
+.right {
+    text-align: right;
+}
+.button {
+    font-family: Grotesk-Bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 2px solid var(--color1);
+    display: inline-block;
+    padding: 8px 4%;
+    border-radius: 22px;
+}
+.button:hover {
+    background: var(--color1);
+    color: white;
+}
+.button a {
+    color: var(--color1);
+    text-decoration: none;
+}
+.buttonDark {
+    font-family: Grotesk-Bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 2px solid #f9cdcd;
+    display: inline-block;
+    padding: 8px 4%;
+    border-radius: 22px;
+    color: #f9cdcd;
+}
+.buttonDark:hover {
+    background: #f9cdcd;
+    color: #272624;
+}
+.buttonDark a {
+    color: #f9cdcd;
+    text-decoration: none;
+}
+.trennL {
+    border-bottom: 2px solid var(--color1);
+    padding: 10vh 0;
+}
+.abStand {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+/* ------ Header+Nav ------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 4%;
+}
+header img {
+    height: 3vh;
+}
+.menu {
+    height: 1vh;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+header li {
+    font-size: 0.8em;
+    padding: 0 10%;
+    color: var(--color1);
+}
+header nav a {
+    text-decoration: none;
+    color: var(--color1);
+}
+header nav a:hover {
+    border-bottom: 1px solid var(--color1);
+}
+/* ----------- Content Home ----------- */
+#home{
+    padding-top: 10vh;
+    padding: 8vh 4% 0;
+}
+#videoHome {
+    width: 100%;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 1.8vh;
+  }
+.fullLine {
+    border-top: 1px solid var(--color1);
+    line-height: 3em;
+}
+#basic {
+    display: flex;
+    margin-bottom: 6vh;
+}
+#basic h2 {
+    width:54%;
+}
+#basic img {
+    margin-left: auto;
+    transform: translate(0px,-30px);
+}
+/* horizontal scrolling + Content */
+  .container {
+    display: flex;
+    overflow: auto;
+}
+  .container > div {
+    scroll-snap-align: center;
+    flex: none;
+  }
+  .x.container > div {
+    font-family: Grotesk-Bold;
+    font-size: 1em;
+    line-height: 1.4em;
+    width: 32%;
+    padding: 0 8% 10vh 0;
+  }
+  .smallImg img {
+      height: 2.5em;
+      margin-right: auto;
+      padding-bottom: 2vh;
+  }
+  .shortLine {
+      border-top: 2px solid var(--color1);
+      width: 30px;
+      padding-bottom: 10vh;
+  }
+  .underLine {
+      padding-bottom: 3vh;
+      border-bottom: 2px solid var(--color1);
+  }
+  #horScroll p {
+      padding-top: 2vh;
+  }
+/* dark - BASIC® HELPS */
+.darkBG {
+    background-color: #272624;
+    padding: 16vh 4% 0;
+    mix-blend-mode: exclusion;
+}
+.rosa {
+    color: #f9cdcd;
+}
+.rosaLine {
+    line-height: 1em;
+}
+.space {
+    margin-top: 10vh;
+}
+.flex {
+    display: flex;
+}
+.left60 {
+    width: 80%;
+}
+h2.darkBG.rosa {
+    padding-bottom: 6vh;
+}
+#news {
+    padding: 0 4%;
+    background-color: #272624;
+    mix-blend-mode: exclusion;
+}
+/* FullWidth Img-Txt-Arrow */
+#NewsFullW {
+    border-top: 2px solid #f9cdcd;
+    padding: 3vh 0 6vh;
+    display: grid;
+    grid-template-columns: 30% 50% auto 10%;
+    grid-gap: 30px
+}
+.flexC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#NewsFullW h2 {
+    font-family: Grotesk-Regular;
+}
+.firstImg {
+    width: 100%;
+}
+.arrow {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+}
+/* ----------- Content WORK ----------- */
+#work {
+    
+}
+
+/*----------- Footer 2-spaltig -----------*/
+.footer2sp {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 30px;
+    padding: 14vh 0 14vh;
+}
+.footer2sp img {
+    height: 1.8em;
+}
+.footer2sp h3, a {
+    font-family: Grotesk-Regular;
+    color: white;
+}
+.footer4sp {
+    display: grid;
+    grid-template-columns: 50% 15% 15% auto;
+    grid-gap: 30px;
+    padding-bottom: 16vh;
+}
+label {
+    color: white;
+}
+input#email {
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+}
+.footer4sp h4, .footer4sp p {
+    color: var(--color0);
+    padding-bottom: 16px;
+}
+#footer {
+    background: #21201E;
+    padding: 3vh 4%;
+    mix-blend-mode: exclusion;
+    display: flex;
+    justify-content: space-between;
+}
+#footer p {
+    color: rgb(75, 74, 71);
+    font-size: 0.6em;
+}
