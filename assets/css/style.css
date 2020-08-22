@@ -159,7 +159,7 @@ header nav a:hover {
     padding-top: 10vh;
     padding: 8vh 4% 0;
 }
-#videoHome {
+.videoHome {
     width: 100%;
     height: auto;
     padding-top: 8px;
@@ -243,7 +243,7 @@ h2.darkBG.rosa {
     mix-blend-mode: exclusion;
 }
 /* FullWidth Img-Txt-Arrow */
-#NewsFullW {
+.NewsFullW {
     border-top: 2px solid #f9cdcd;
     padding: 3vh 0 6vh;
     display: grid;
@@ -255,7 +255,7 @@ h2.darkBG.rosa {
     flex-direction: column;
     justify-content: space-between;
 }
-#NewsFullW h2 {
+.NewsFullW h2 {
     font-family: Grotesk-Regular;
 }
 .firstImg {
