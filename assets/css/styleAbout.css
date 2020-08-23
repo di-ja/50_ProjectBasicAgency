@@ -1,0 +1,244 @@
+/* ------ Header+Nav ------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 4%;
+}
+header img {
+    height: 3vh;
+}
+.menu {
+    height: 1vh;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+header li {
+    font-size: 0.8em;
+    padding: 0 10%;
+}
+header nav a {
+    text-decoration: none;
+    color: var(--color2);
+}
+header nav a:hover {
+    border-bottom: 1px solid var(--color2);
+}
+/* ------ dark ------ */
+.darkBG {
+    background-color: #272624;
+    padding: 0;
+    mix-blend-mode: exclusion;
+}
+h1 {
+    color: var(--color2);
+}
+h2 {
+    color: var(--color2);
+}
+h3 {
+    font-family: Grotesk-Regular;
+    color: var(--color2);
+    line-height: 2.5rem;
+    padding: 5vh 0 10vh;
+}
+p {
+    color: var(--color2);
+}
+/* ------ Content ------ */
+.zweiSp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    }
+#about {
+    padding-top: 10vh;
+    padding: 8vh 4% 14vh;
+}
+#about article {
+    border-bottom: 2px solid var(--color2);
+}
+/* ------ PictureArea ------ */
+#Gallery img {
+    width: 100%;
+}
+#Gallery {
+    margin: 0 4%;
+    position: relative;
+    height: 150vh;
+}
+#Gallery p {
+    padding-top: 2vh;
+    display: block;
+}
+.imG01 {
+    width: 36%;
+    position: absolute;
+    top: 10vh;
+    left: 20%;
+}
+.imG01:hover {
+    z-index: 999;
+}
+.imG02 {
+    width: 36%;
+    position: absolute;
+    top: 37vh;
+    left: 34%;
+}
+.imG02:hover {
+    z-index: 999;
+}
+.imG03 {
+    width: 36%;
+    position: absolute;
+    top: 20vh;
+    right: 20%;
+}
+.imG03 p {
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+}
+.imG03:hover {
+    z-index: 999;
+}
+.imG04 {
+    width: 36%;
+    position: absolute;
+    top: 54vh;
+    right: 5%;
+}
+.imG04:hover {
+    z-index: 999;
+}
+.gallerySiteTxt {
+    position: absolute;
+    left: 0;
+    top: 55vh;
+    font-size: 0.6em;
+}
+/* ------ BASIC Area + Grid ------ */
+.LineBasicLine {
+    margin: 0 4%;
+    border-top: 2px solid var(--color2);
+    border-bottom: 2px solid var(--color2);
+}
+.LineBasicLine img {
+    padding: 2vh 0;
+    width: 50%;
+}
+.basicGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 2vh 4% 10vh;
+}
+.buttonDark {
+    margin: 5vh 0;
+}
+.basicGrid p:nth-of-type(3) {
+    text-align: right;
+}
+.basicGrid h5 {
+    color: var(--color2);
+}
+.basicGrid h1 {
+    padding: 3vh 0;
+} 
+section:nth-of-type(5) article:first-of-type {
+    border-top: 2px solid var(--color2);
+    padding-top: 2vh;
+}
+section:nth-of-type(6) article:first-of-type {
+    border-top: 2px solid var(--color2);
+    padding-top: 2vh;
+}
+.capaBullets {
+    padding-top: 1.5vh;
+    line-height: 4.5vh;
+}
+.basicGridZwei {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    margin: 2vh 4% 10vh;
+}
+.basicGridZwei h3 {
+    padding: 0 40% 0 0;
+    line-height: 3rem;
+}
+/* ------ BulletPoints + ImageShow ------ */
+.bulletRollover {
+    margin: 0 4%;
+    position: relative;
+}
+.bulletRollover h1 {
+    letter-spacing: -3px;
+}
+.bulletRollover div {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.bulletRollover div:hover:nth-of-type(1) {
+    opacity: 1;
+    display: flex;
+}
+.bulletRollover p {
+    font-family: Grotesk-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+    -ms-transform: translate(50px,100px); /* IE 9 */
+    transform: translate(8px,-24px); /* Standard syntax */
+}
+.bulletRollover {
+    position: relative;
+    height: 100vh;
+}
+.img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+.img2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+.img3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+.img4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+.img5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+.img6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+
