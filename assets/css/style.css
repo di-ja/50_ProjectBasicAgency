@@ -7,24 +7,27 @@
 
 @font-face {
     font-family: Grotesk-Regular;
-    src: url(../fonts/SctoGroteskA-Regular.woff2);}
+    src: url(../fonts/SctoGroteskA-Regular.woff2);
+}
 @font-face {
     font-family: Grotesk-Medium;
-    src: url(../fonts/SctoGroteskA-Medium.woff2);}
+    src: url(../fonts/SctoGroteskA-Medium.woff2);
+}
 @font-face {
     font-family: Grotesk-Bold;
-    src: url(../fonts/SctoGroteskA-Bold.woff2);}
-
+    src: url(../fonts/SctoGroteskA-Bold.woff2);
+}
+* {
+    margin:0; padding:0;
+}
 html{
     scroll-behavior: smooth;
 }
-* {margin:0; padding:0}
 body {
     font-family: Grotesk-Regular;
     font-size: 20px;
 }
 .flurry {
-        height: 100vh;
       }
 .flurry:after {
         animation: mymove 8s steps(10) infinite;
@@ -67,13 +70,18 @@ h3 {
     font-family: Grotesk-Bold;
     color: var(--color1);
     font-family: Grotesk-Bold;
-
 }
 h4 {
     font-size: 1.2em;
     font-family: Grotesk-Regular;
     line-height: 1.1em;
     color: var(--color0);
+}
+h5 {
+    font-size: 1.4em;
+    font-family: Grotesk-Bold;
+    color: var(--color1);
+    font-family: Grotesk-Bold;
 }
 .bold {
     font-family: Grotesk-Bold;
@@ -166,6 +174,7 @@ header nav a:hover {
     padding-bottom: 1.8vh;
   }
 .fullLine {
+    margin-top: 2vh;
     border-top: 1px solid var(--color1);
     line-height: 3em;
 }
@@ -173,7 +182,7 @@ header nav a:hover {
     display: flex;
     margin-bottom: 6vh;
 }
-#basic h2 {
+#basic h3 {
     width:54%;
 }
 #basic img {
@@ -268,22 +277,61 @@ h2.darkBG.rosa {
 }
 /* ----------- Content WORK ----------- */
 #work {
-    
+    padding-top: 10vh;
+    padding: 8vh 4% 14vh;
+    height: 68vh;
 }
+.Linie {
+    border-top: 2px solid var(--color1);
+    margin: 3vh 4%;
+}
+#work p {
+    align-self: flex-end;
+    padding-left: 16%;
+}
+.dreiSp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    height: 84vh;
+    margin-top: 1.5rem;
+    }
+.dreiSp div:first-child {
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid var(--color1);
+    padding-right: 1rem;
+}
+.dreiSp p:nth-child(2) {
+    padding: 3vh 0 4vh;
+}
+.halbeSp {
+    padding-right: 35%;
+}
+.videoHome {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.dreiSp img {
+    width: 100%;
+}
+
+
 
 /*----------- Footer 2-spaltig -----------*/
 .footer2sp {
     display: grid;
     grid-template-columns: 50% auto;
     grid-gap: 30px;
-    padding: 14vh 0 14vh;
+    padding: 14vh 4% 14vh;
 }
 .footer2sp img {
     height: 1.8em;
 }
 .footer2sp h3, a {
     font-family: Grotesk-Regular;
-    color: white;
+    color: var(--color0);
 }
 .footer4sp {
     display: grid;
@@ -292,14 +340,14 @@ h2.darkBG.rosa {
     padding-bottom: 16vh;
 }
 label {
-    color: white;
+    color: var(--color0);
 }
 input#email {
     border: none;
     background: none;
     border-bottom: 1px solid white;
     width: 100%;
-    color: white;
+    color: var(--color0);
     font-size: 1em;
 }
 .footer4sp h4, .footer4sp p {
