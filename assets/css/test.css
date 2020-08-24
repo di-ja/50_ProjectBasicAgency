@@ -1,0 +1,24 @@
+.hover_img01 a {
+    position:relative;
+}
+.hover_img01 a span {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display:none;
+    z-index:99;
+}
+.hover_img01 a:hover span {
+    display:block;
+}
+
+
+/*
+.img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    display: none;
+}

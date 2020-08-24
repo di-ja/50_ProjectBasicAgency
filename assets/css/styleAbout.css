@@ -172,73 +172,56 @@ section:nth-of-type(6) article:first-of-type {
     line-height: 3rem;
 }
 /* ------ BulletPoints + ImageShow ------ */
-.bulletRollover {
+.bullets {
     margin: 0 4%;
-    position: relative;
 }
-.bulletRollover h1 {
+.bullets h1 {
     letter-spacing: -3px;
 }
-.bulletRollover div {
-    display: flex;
-    align-items: center;
-    opacity: 0.5;
-}
-.bulletRollover div:hover:nth-of-type(1) {
-    opacity: 1;
-    display: flex;
-}
-.bulletRollover p {
+.bullets p {
     font-family: Grotesk-Regular;
     font-size: 20px;
     letter-spacing: 0;
-    -ms-transform: translate(50px,100px); /* IE 9 */
-    transform: translate(8px,-24px); /* Standard syntax */
+    transform: translate(0px, 20px);
 }
-.bulletRollover {
-    position: relative;
-    height: 100vh;
+/*--------*/
+.hover_img01 a {
+    position:relative;
+    width: 100%;
+    text-decoration: none;
+    display: block;
 }
-.img1 {
-    position: absolute;
-    top: 0;
+.hover_img01 span:first-of-type {
+    display: flex;
+    opacity: 0.5;
+}
+.hover_img01 a span:last-of-type {
+    position:absolute;
+    top: -10vh;
     right: 0;
-    width: 40%;
-    display: none;
+    opacity: 0;
 }
-.img2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    display: none;
+.hover_img01 a:hover span {
+    opacity: 100;
 }
-.img3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    display: none;
+/*--------*/
+.hover_img02 a {
+    position:relative;
+    width: 100%;
+    text-decoration: none;
+    display: block;
 }
-.img4 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    display: none;
+.hover_img02 span:first-of-type {
+    display: flex;
+    opacity: 0.5;
 }
-.img5 {
-    position: absolute;
-    top: 0;
+.hover_img02 a span:last-of-type {
+    position:absolute;
+    top: -40vh;
     right: 0;
-    width: 40%;
-    display: none;
+    opacity: 0;
 }
-.img6 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    display: none;
+.hover_img02 a:hover span {
+    opacity: 100;
 }
 
