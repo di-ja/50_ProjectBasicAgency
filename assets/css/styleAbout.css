@@ -184,7 +184,6 @@ section:nth-of-type(6) article:first-of-type {
     letter-spacing: 0;
     transform: translate(0px, 20px);
 }
-/*--------*/
 .hover_img01 a {
     position:relative;
     width: 100%;
@@ -204,7 +203,6 @@ section:nth-of-type(6) article:first-of-type {
 .hover_img01 a:hover span {
     opacity: 100;
 }
-/*--------*/
 .hover_img02 a {
     position:relative;
     width: 100%;
@@ -224,4 +222,13 @@ section:nth-of-type(6) article:first-of-type {
 .hover_img02 a:hover span {
     opacity: 100;
 }
-
+/* ------ Footer weiss ------ */
+.lightBG {
+    background-color: var(--color0);
+    padding: 16vh 4% 0;
+    mix-blend-mode: exclusion;
+}
+.footer2sp h3, a {
+    font-family: Grotesk-Regular;
+    color: var(--color1);
+}
